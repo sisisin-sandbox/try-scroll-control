@@ -6,7 +6,7 @@ export const App: React.FC = () => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const firstItemRef = React.useRef<HTMLDivElement>(null);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const con = containerRef.current;
     if (con.scrollTop !== 0) {
       const item = firstItemRef.current;
